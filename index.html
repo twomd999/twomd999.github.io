@@ -1,9 +1,108 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="resources\css\styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOX properties</title>
+</head>
 <body>
-  <h1>Twomd</h1>
-  <p>Welcome to my website! Don't be too impressed! </p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
 
+    <!--box-->
+    <h1> CSS rule reference </h1>
+    <h2> The CSS Box Model </h2>
+    <p>In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: content, padding, borders and margins.</p>
+    <table id="box">
+
+        <thead>
+            <tr>
+                <th scope="col"> Name </th>
+                <th scope="col"> Description </th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Content</td>
+                <td>The content of the box, where text and images appear</td>
+            </tr>
+            <tr>
+                <td>Padding</td>
+                <td>Clears an area around the content. The padding is transparent</td>
+            </tr>
+            <tr>
+                <td>Border</td>
+                <td>A border that goes around the padding and content</td>
+            </tr>
+            <tr>
+                <td>Margin</td>
+                <td>Clears an area outside the border. The margin is transparent</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank">
+        <button>Additional Documentation</button></a>
+        <ul class="boxdump"> 
+            <li>The <span class="keyword"> property</span> allows you to specify the position of an element. </li>
+            <li>When set to <span class="keyword">relative</span>, an element’s position is relative to its default position on the page.</li>
+            <li>When set to <span class="keyword">absolute</span>, an element’s position is relative to its closest positioned parent element. It can be pinned to any part of the web page, but the element will still move with the rest of the document when the page is scrolled.</li>
+            <li>When set to <span class="keyword">fixed</span>, an element’s position can be pinned to any part of the web page. The element will remain in view no matter what. </li>
+            <li>When set to <span class="keyword">sticky</span>, an element can stick to a defined offset position when the user scrolls its parent container.</li>
+            <li>The <span class="keyword">z-index</span> of an element specifies how far back or how far forward an element appears on the page when it overlaps other elements.</li>
+            <li>The <span class="keyword">display</span> property allows you to control how an element flows vertically and horizontally in a document.</li>
+            <li><span class="keyword">inline</span> elements take up as little space as possible, and they cannot have manually adjusted <span class="keyword">width</span> or <span class="keyword">height</span>.</li>
+            <li><span class="keyword">block</span> elements take up the width of their container and can have manually adjusted heights.</li>
+            <li><span class="keyword">inline-block</span> elements can have set width and height, but they can also appear next to each other and do not take up their entire container width.</li>
+            <li>The <span class="keyword">float</span> property can move elements as far left or as far right as possible on a web page.</li>
+            <li>You can clear an element’s left or right side (or both) using the <span class="keyword">clear</span> property.</li>
+        </ul>
+
+
+        <!-- Selectors-->
+        <h2> CSS Selectors (simple selectors) </h2>
+        <p>A CSS selector selects the HTML element(s) you want to style. Rank correlates to specificity, or which rule will apply if two rules are in conflict.</p>
+        <table id="selector">
+    
+            <thead>
+                <tr>
+                    <th scope="col"> Name </th>
+                    <th scope="col"> Example </th>
+                    <th scope="col"> Description </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#id</td>
+                    <td>#firstname</td>
+                    <td>Selects the element with id="firstname"</td>
+                </tr>
+                <tr>
+                    <td>.class</td>
+                    <td>.intro</td>
+                    <td>Selects all elements with class ="intro"</td>
+                </tr>
+                <tr>
+                    <td>element.class</td>
+                    <td>p.intro</td>
+                    <td>Selects only "p" with class="intro"</td>
+                </tr>
+                <tr>
+                    <td>element</td>
+                    <td>p</td>
+                    <td>Selects all "p" elements</td>
+                </tr>
+                <tr>
+                    <td>element, element, ...</td>
+                    <td>div, p</td>
+                    <td>Selects all "div" and "p" elements</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>Selects all elements</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">
+            <button>Additional Documentation</button></a>
+</body>
 </html>
